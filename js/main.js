@@ -21,8 +21,21 @@ function escreverTexto() {
     textoElemento.textContent += texto.charAt(contadorDeLetras);
     contadorDeLetras++;
     setTimeout(escreverTexto, atraso);
+  }else {
+    setTimeout(apagarTexto, 1000);
   }
 }
+
+function apagarTexto() {
+  if (contadorDeLetras > 0) {
+    textoElemento.textContent = texto.slice(0, contadorDeLetras - 1);
+    contadorDeLetras--;
+    setTimeout(apagarTexto, atraso);
+  }else {
+    setTimeout(escreverTexto, 1000);
+  }
+}
+
 
 escreverTexto();
 
