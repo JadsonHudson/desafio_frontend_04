@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
 :root {
     --cor-primaria: #fffff;
@@ -214,7 +214,71 @@ h1 {
 } 
 /* .texto__rodape {} */
 
+.faq__left, .faq__right {
+    flex: 1;
+    padding: 20px;
+}
 
+.faq__left .faq__titulo {
+    font-size: 1.5rem;
+    font-family: var(--fonte-secundaria);
+    padding-bottom: 3px;
+
+    }
+
+.faq__left .faq__subtitulo {
+    font-size: 3.2rem;
+    margin: 10px 0;
+    font-family: var(--fonte-primaria);
+    padding-bottom: 10px;
+    
+}
+
+.faq__left p, .faq__right p {
+    font-size: 1.4rem;
+    color: #333; 
+    font-family: var(--fonte-secundaria);
+      
+    
+}
+.faq__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    padding: 240px; 
+ 
+}
+
+.faq__left a, .faq__right a {
+    color: #333; 
+}
+
+.faq__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #333;; 
+}
+
+.faq__item p {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.faq__item span {
+    font-size: 1.4rem;
+    color: #333; 
+    cursor: pointer;
+}
+
+.faq__links {
+    text-decoration: none;
+    color: var(--cor-secundaria); /
+}
+
+ 
 @media (max-width:1200px) {
 
     body {
