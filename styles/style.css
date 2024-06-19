@@ -183,7 +183,7 @@ body {
     display: flex;
     justify-content: center;
     gap: 16px;
-    border: 2px solid var(--cor-terciaria);
+    border: 2px solid var(--cor-secundaria);
     text-align: center;
     border-radius: 8px;
     font-size: 1.5rem;
@@ -191,6 +191,7 @@ body {
     padding: .5rem 1rem;
     text-wrap: nowrap;
     color: var(--cor-secundaria);
+    background-color: var(--cor-hover);
     font-family: var(--fonte-secundaria);
 }
 

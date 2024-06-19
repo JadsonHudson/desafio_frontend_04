@@ -1,4 +1,4 @@
-var texto = "Nome do Jogo";
+var texto = "Connect Organic";
 var atraso = 200;
 var textoElemento = document.querySelector(".titulo-principal");
 var contadorDeLetras = 0;
