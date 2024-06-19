@@ -78,14 +78,14 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 40px;
+    gap: 2.5rem;
 }
 
 .apresentacao__container__conteudo {
     display: flex;
     flex-direction: column;
-    gap: 40px;
     width: 50%;
+    gap: 2.5rem;
 }
 
 .titulo-principal {
@@ -330,14 +330,6 @@ body {
       
     
 }
-.faq__container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 10vh;
-    padding: 240px; 
- 
-}
 
 .faq__left a, .faq__right a {
     color: #333; 
@@ -426,8 +418,7 @@ body {
 
     .faq__container {
         display: flex;
-        height: 10vh;
-        padding: 250px;
+        padding: 2rem;
         flex-direction: column;
     }
 
