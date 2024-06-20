@@ -36,8 +36,25 @@ body {
     background-position: center;
 
 }
+/* CSS ALANA */
+.cabecalho__sobreojogo {
+    float: right;
+    padding: 1rem 6rem; 
+   }
 
+   .imagem__inferior__direita {
+    position: relative;
+       
+}
 
+.imagem__inferior__direita .outra_imagem {
+    position: absolute;
+    bottom: -300px; /* Ajuste a distancia para baixo */
+    width: 380px; /* Ajuste a largura conforme desejado */
+    height: auto; /* Mantém a proporção da imagem */
+  
+/* CSS ALANA */
+}
 .cabecalho {
     display: flex;
     align-items: center;
@@ -86,6 +103,15 @@ body {
     flex-direction: column;
     gap: 40px;
     width: 50%;
+}
+
+.apresentacao__container__conteudosobreojogo {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 50%;
+    margin-bottom: 200px;
+    margin-top: 200px;
 }
 
 .titulo-principal {
