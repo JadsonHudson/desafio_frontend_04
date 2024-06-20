@@ -49,7 +49,7 @@ body {
 
 .imagem__inferior__direita .outra_imagem {
     position: absolute;
-    bottom: -300px; /* Ajuste a distancia para baixo */
+    bottom: -300px; /* Ajuste a distancia para baix */
     width: 380px; /* Ajuste a largura conforme desejado */
     height: auto; /* Mantém a proporção da imagem */
   
