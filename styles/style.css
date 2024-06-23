@@ -721,6 +721,8 @@ body {
 .cadastro-page .cadastro__apresentacao p {
     font-size: 18px;
     line-height: 1.5;
+    font-family: var(--fonte-secundaria);
+
 }
 
 .cadastro-page .cadastro__formulario {
@@ -765,6 +767,8 @@ body {
     font-size: 12px;
     color: #666;
     margin-bottom: 20px;
+    font-family: var(--fonte-secundaria);
+
 }
 
 .cadastro-page form button {
