@@ -1,12 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
 :root {
-    --cor-primaria: #fffff;
+    --cor-primaria: #ffffff;
     --cor-secundaria: #000000;
     --cor-terciaria: #000000;
     --cor-hover: #8AD25B;
     --cor-background: #9FCD8B;
     --cor-section: #9FCD8B;
+    --cor-cadastro: #FFFFF2;
     --fonte-primaria: 'Playfair Display', bold;
     --fonte-secundaria: 'Inter', sans-serif;
 }
@@ -251,6 +252,7 @@ body {
     font-size: 1.5rem;
     font-family: var(--fonte-secundaria);
     padding-bottom: 3px;
+    color: var(--cor-secundaria);
 
 }
 
@@ -259,6 +261,7 @@ body {
     margin: 10px 0;
     font-family: var(--fonte-primaria);
     padding-bottom: 10px;
+    color: var(--cor-secundaria);
 
 }
 
@@ -654,9 +657,129 @@ body {
     max-width: 50%;
     /* flex-grow: 1;
             flex-shrink: 1; */
+
+
 }
 
 
+.cadastro-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 110vh;
+    position: relative; /* Para garantir que .cadastro__fundo ocupe o espaço completo */
+}
+
+.cadastro-page .cadastro__fundo {
+    background-image: url('/assets/fundocadastro.png');
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Para garantir que fique atrás dos outros elementos */
+}
+
+.cadastro-page .cadastro__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    max-width: 1200px;
+    position: relative;
+    z-index: 1; /* Para que fique acima do .cadastro__fundo */
+}
+
+.cadastro-page .cadastro__apresentacao {
+    background-color: var(--cor-cadastro);
+    color: var(--cor-secundaria);
+    padding: 40px;
+    width: 50%;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cadastro-page .cadastro__apresentacao .cadastro__logo {
+    margin-bottom: 20px;
+}
+
+.logo__jogo {
+    width: 10%;
+    margin-bottom: 20px;
+}
+
+.cadastro-page .cadastro__apresentacao h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-family: var(--fonte-primaria);
+}
+
+.cadastro-page .cadastro__apresentacao p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.cadastro-page .cadastro__formulario {
+    background-color: var(--cor-primaria);
+    padding: 40px;
+    width: 40%;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+}
+
+.cadastro-page .cadastro__formulario h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-family: var(--fonte-secundaria);
+    text-align: center;
+    
+
+}
+
+.cadastro-page form {
+    display: flex;
+    flex-direction: column;
+}
+
+.cadastro-page form label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    font-family: var(--fonte-secundaria);
+
+}
+
+.cadastro-page form input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+}
+
+.cadastro-page .cadastro__termos {
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.cadastro-page form button {
+    background-color: var(--cor-hover);
+    color: var(--cor-primaria);
+    padding: 10px;
+    border: none;
+    border-radius: 32px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.cadastro-page form button:hover {
+    background-color: #5F9E75;
+}
 
 @media (max-width: 800px) {
     .personagens-info {
