@@ -60,7 +60,6 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 1rem 6rem;
-
 }
 
 .cabecalho__menu {
@@ -94,7 +93,7 @@ body {
     padding: 0rem 6rem;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-a;
     gap: 40px;
 }
 
@@ -106,12 +105,10 @@ body {
 }
 
 .apresentacao__container__conteudosobreojogo {
+    width: 80%;
     display: flex;
     flex-direction: column;
     gap: 40px;
-    width: 50%;
-    margin-bottom: 200px;
-    margin-top: 200px;
 }
 
 .titulo-principal {
@@ -189,6 +186,7 @@ body {
 .conteudo__texto {
     font-size: 1.2rem;
     font-family: var(--fonte-secundaria);
+    margin-bottom: -1.25rem; 
 }
 
 .apresentacao__container__color {
