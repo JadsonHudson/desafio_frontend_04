@@ -121,18 +121,12 @@ body {
     margin: 3.5rem 0;
 }
 
-.texto__sobreojogo {
-    text-align: left;
-    font-size: 1.1rem;    
-    font-family: var(--fonte-primaria);
-    margin: 1rem 0;
-    text-align: justify;
-}
-
+.texto__sobreojogo,
 .texto__sobreojogo2 {
     text-align: left;
     font-size: 1.1rem;    
     font-family: var(--fonte-primaria);
+    margin: 1rem 0;
     text-align: justify;
 }
 
