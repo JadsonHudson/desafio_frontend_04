@@ -1,12 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
 :root {
-    --cor-primaria: #fffff;
+    --cor-primaria: #ffffff;
     --cor-secundaria: #000000;
     --cor-terciaria: #000000;
     --cor-hover: #8AD25B;
     --cor-background: #9FCD8B;
     --cor-section: #9FCD8B;
+    --cor-cadastro: #FFFFF2;
+    --cor-footer: #63BB80;
     --fonte-primaria: 'Playfair Display', bold;
     --fonte-secundaria: 'Inter', sans-serif;
 }
@@ -81,6 +83,7 @@ body {
     gap: 2.5rem;
 }
 
+
 .apresentacao__container__conteudo {
     display: flex;
     flex-direction: column;
@@ -88,11 +91,67 @@ body {
     gap: 2.5rem;
 }
 
+/* .estilos duvidas, suporte{} */
+
+/* seção sobre o jogo */
+.apresentacao__sobreojogo {
+    padding: 10rem 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2.5rem;
+    background-color: #63BB80;
+    margin: 0 auto;
+    height: 85vh;
+}
+
+.apresentacao_sobreojogo_conteudo {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    white-space: pre-line;
+    
+}
+
+.titulo-sobreojogo {
+    text-align: left;
+    font-size: 2.35rem;
+    font-family: var(--fonte-primaria);
+    margin: 3.5rem 0;
+}
+
+.texto__sobreojogo {
+    text-align: left;
+    font-size: 1.1rem;    
+    font-family: var(--fonte-primaria);
+    margin: 1rem 0;
+    text-align: justify;
+}
+
+.texto__sobreojogo2 {
+    text-align: left;
+    font-size: 1.1rem;    
+    font-family: var(--fonte-primaria);
+    text-align: justify;
+}
+
+.imagem__sobreojogo {
+    position: relative; 
+}
+
+.conteudo__titulo {
+    font-size: 2.25rem;
+    font-family: var(--fonte-primaria);
+}
+
 .titulo-principal {
     text-align: left;
     font-size: 1.875rem;
     font-family: var(--fonte-primaria);
 }
+
+
 
 #nome-autor::after {
     content: "|";
@@ -229,15 +288,17 @@ body {
     justify-content: center;
     padding: 4rem 6rem 2rem;
     gap: 2rem;
-    background-color: var(--cor-background);
+    background-color: var( --cor-footer);
 }
-
+/* .texto__rodape {} */
 .rodape p {
     text-align: center;
     line-height: 2em;
+    font-family: var(--fonte-secundaria);
+
 }
 
-/* .texto__rodape {} */
+/*seção FAQ */
 
 .faq__left {
     width: 45%;
@@ -245,12 +306,13 @@ body {
 
 .faq__right {
     width: 55%;
-}
+  }
 
 .faq__left .faq__titulo {
     font-size: 1.5rem;
     font-family: var(--fonte-secundaria);
     padding-bottom: 3px;
+    color: var(--cor-secundaria);
 
 }
 
@@ -259,6 +321,7 @@ body {
     margin: 10px 0;
     font-family: var(--fonte-primaria);
     padding-bottom: 10px;
+    color: var(--cor-secundaria);
 
 }
 
@@ -274,8 +337,8 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: end;
-    padding: 4rem 6rem;
-
+    padding: 13rem 15rem;
+    
 }
 
 .faq__left a, .faq__right a {
@@ -286,13 +349,15 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: .5rem;
+    padding: .2rem;
     border-bottom: 1px solid #333;
 }
 
 .faq__item p {
     margin: 0;
     font-size: 1.2rem;
+    padding: .8rem;
+
 }
 
 .faq__item span {
@@ -308,58 +373,362 @@ body {
 
 
 
-.faq__left .faq__titulo {
-    font-size: 1.5rem;
-    font-family: var(--fonte-secundaria);
-    padding-bottom: 3px;
+ /*Pagina de Rotas */
 
+ .rotas__section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('/assets/fundorotas.png');
+    background-size: cover;
+    background-position: center;
 }
 
-.faq__left .faq__subtitulo {
-    font-size: 3.2rem;
-    margin: 10px 0;
+.rotas__container {
+    text-align: center;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+
+.titulo__principal__rotas {
+    font-size: 38px;
+    margin-bottom: 80px;
+    text-align: center;
     font-family: var(--fonte-primaria);
-    padding-bottom: 10px;
-
+  
 }
 
-.faq__left p, .faq__right p {
-    font-size: 1.4rem;
-    color: #333;
-    font-family: var(--fonte-secundaria);
-
-
+.rotas__imagens {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
 }
 
-.faq__left a, .faq__right a {
-    color: #333;
+.rota__imagem {
+    width: 45%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+/*sessão ESTRADAS */
+
+.titulo__principal__estradas {
+    text-align: center;
+    font-size: 30px;
+    font-family: var(--fonte-primaria);
+          
 }
 
-.faq__item {
+.apresentacao__container__estradas {
+    display: flex;
+    flex-direction: column;
+     gap: 2.5rem;
+    align-items: center;
+    padding: 5rem 15rem;
+
+    
+    }
+
+      
+
+/*Pagina de Cadastro */
+.cadastro-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 110vh;
+    position: relative; /* Para garantir que .cadastro__fundo ocupe o espaço completo */
+}
+
+.cadastro-page .cadastro__fundo {
+    background-image: url('/assets/fundocadastro.png');
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Para garantir que fique atrás dos outros elementos */
+}
+
+.cadastro-page .cadastro__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 0;
-    border-bottom: 1px solid #333;
-    ;
+    width: 80%;
+    max-width: 1200px;
+    position: relative;
+    z-index: 1; /* Para que fique acima do .cadastro__fundo */
 }
 
-.faq__item p {
-    margin: 0;
-    font-size: 1.2rem;
+.cadastro-page .cadastro__apresentacao {
+    background-color: var(--cor-cadastro);
+    color: var(--cor-secundaria);
+    padding: 40px;
+    width: 50%;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.faq__item span {
-    font-size: 1.4rem;
-    color: #333;
+.cadastro-page .cadastro__apresentacao .cadastro__logo {
+    margin-bottom: 20px;
+}
+
+.logo__jogo {
+    width: 10%;
+    margin-bottom: 20px;
+}
+
+.cadastro-page .cadastro__apresentacao h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-family: var(--fonte-primaria);
+    text-align: left;
+
+}
+
+.cadastro-page .cadastro__apresentacao p {
+    font-size: 18px;
+    line-height: 1.5;
+    font-family: var(--fonte-secundaria);
+    text-align: left;
+
+
+}
+
+.cadastro-page .cadastro__formulario {
+    background-color: var(--cor-primaria);
+    padding: 40px;
+    width: 40%;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+}
+
+.cadastro-page .cadastro__formulario h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-family: var(--fonte-secundaria);
+    text-align: center;
+    
+
+}
+
+.cadastro-page form {
+    display: flex;
+    flex-direction: column;
+}
+
+.cadastro-page form label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    font-family: var(--fonte-secundaria);
+
+}
+
+.cadastro-page form input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+}
+
+.cadastro-page .cadastro__termos {
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 20px;
+    font-family: var(--fonte-secundaria);
+    text-align: center;
+
+
+
+}
+
+.cadastro-page form button {
+    background-color: var(--cor-hover);
+    color: var(--cor-primaria);
+    padding: 10px;
+    border: none;
+    border-radius: 32px;
     cursor: pointer;
+    font-size: 16px;
 }
 
-.faq__links {
-    text-decoration: none;
-    color: var(--cor-secundaria);/
+.cadastro-page form button:hover {
+    background-color: #5F9E75;
 }
 
+
+
+
+
+/* ------------------------------------ Karol Soares ------------------------------------*/
+
+@media (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+.titulo__principal__personagens {
+    font-size: 38px;
+ padding-bottom:80px ;
+    text-align: left;
+    font-family: var(--fonte-primaria);
+   }
+
+#personagens {
+    padding: 5rem 6rem;
+
+}
+
+#personagens h1 {
+    /* Conheça os personagens do jogo! */
+    max-width: 524px;
+    min-height: 103px;
+
+    font-family: 'Playfair Display';
+    font-style: 3rem;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 100%;
+    /* or 48px */
+    letter-spacing: 0.02em;
+
+    color: #000000;
+}
+
+#personagens p {
+    /* Adicionar imagens e descrição dos personagens (se for ter) */
+
+    /* Body/Regular */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    /* or 26px */
+
+    color: #000000;
+}
+
+#personagens-fotos {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    /* flex-wrap: wrap; */
+    /* flex-grow: 1; */
+    /* flex-shrink: 1; */
+    /* border-bottom: 1px solid black; */
+    overflow-x: hidden;
+    overflow-y: hidden;
+    min-width: 400px;
+    margin-left: -3rem;
+ 
+
+}
+
+#personagens-fotos img {
+    z-index: 90;
+    /* height: 17rem; */
+    height: auto;
+    max-height: 300px;
+    /* flex-grow: 0; */
+    /* flex-shrink: 2; */
+}
+
+@media (min-width: 1000px) {
+
+    #personagens-fotos {
+        height: auto;
+        /* flex-wrap: wrap; */
+        /* margin: 0 auto; */
+
+    }
+
+    #personagens-fotos img {
+        min-width: auto;
+        /* height: 100%; */
+        width: auto !important;
+    }
+}
+
+
+#personagens-fotos img:not(:first-child) {
+    max-width: calc(100% / 5 + 80px);
+    margin-left: -80px;
+}
+
+#personagens-fotos img {
+    width: calc(100% / 5 + 80px);
+    -webkit-filter: grayscale(70%);
+    filter: grayscale(70%);
+    filter: gray;
+    /* IE */
+}
+
+#personagens-fotos img:hover,
+#personagens-fotos img[modo="ativado"] {
+    -webkit-filter: none;
+    filter: none;
+    z-index: 99;
+}
+
+
+/* ==================================================================================== */
+.personagens-info {
+    padding: 4rem 140px;
+    display: flex;
+
+    justify-content: center;
+    gap: 24px;
+
+    align-content: space-around;
+
+}
+
+
+.personagens-info h1 {
+    /* Conheça os personagens do jogo! */
+    min-height: 103px;
+
+    font-family: 'Playfair Display';
+    font-style: 3rem;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 100%;
+    /* or 48px */
+    letter-spacing: 0.02em;
+
+    color: #000000;
+}
+
+.personagens-info-textos {
+    /* Maria Flor é uma caminhoneira jovem e alegre, conhecida por seu caminhão “Girassol” e sua habilidade na direção. Ela ama a natureza e as viagens, levando consigo um diário de bordo cheio de histórias. */
+
+    /* min-height: 94px; */
+    min-width: 443px;
+    max-width: 50%;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 160%;
+    /* or 51px */
+
+    color: #000000;
+
+    flex-grow: 0;
+    flex-shrink: 1;
+}
 
 @media (max-width:1200px) {
 
@@ -487,177 +856,6 @@ body {
     }
 
 }
-
-
-/* ------------------------------------ Karol Soares ------------------------------------*/
-
-@media (max-width: 600px) {
-    body {
-        font-size: 14px;
-    }
-}
-
-#personagens {
-    padding-left: 3rem;
-    padding-right: 3rem;
-}
-
-#personagens h1 {
-    /* Conheça os personagens do jogo! */
-    max-width: 524px;
-    min-height: 103px;
-
-    font-family: 'Playfair Display';
-    font-style: 3rem;
-    font-weight: 700;
-    font-size: 48px;
-    line-height: 100%;
-    /* or 48px */
-    letter-spacing: 0.02em;
-
-    color: #000000;
-}
-
-#personagens p {
-    /* Adicionar imagens e descrição dos personagens (se for ter) */
-
-    /* Body/Regular */
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 160%;
-    /* or 26px */
-
-    color: #000000;
-}
-
-#personagens-fotos {
-    display: flex;
-    justify-content: space-between;
-    align-items: stretch;
-    /* flex-wrap: wrap; */
-    /* flex-grow: 1; */
-    /* flex-shrink: 1; */
-    /* border-bottom: 1px solid black; */
-    overflow-x: hidden;
-    overflow-y: hidden;
-    min-width: 400px;
-    margin-left: -3rem;
-}
-
-#personagens-fotos img {
-    z-index: 90;
-    /* height: 17rem; */
-    height: auto;
-    max-height: 300px;
-    /* flex-grow: 0; */
-    /* flex-shrink: 2; */
-}
-
-@media (min-width: 1000px) {
-
-    #personagens-fotos {
-        height: auto;
-        /* flex-wrap: wrap; */
-        /* margin: 0 auto; */
-
-    }
-
-    #personagens-fotos img {
-        min-width: auto;
-        /* height: 100%; */
-        width: auto !important;
-    }
-}
-
-
-#personagens-fotos img:not(:first-child) {
-    max-width: calc(100% / 5 + 80px);
-    margin-left: -80px;
-}
-
-#personagens-fotos img {
-    width: calc(100% / 5 + 80px);
-    -webkit-filter: grayscale(70%);
-    filter: grayscale(70%);
-    filter: gray;
-    /* IE */
-}
-
-#personagens-fotos img:hover,
-#personagens-fotos img[modo="ativado"] {
-    -webkit-filter: none;
-    filter: none;
-    z-index: 99;
-}
-
-
-/* ==================================================================================== */
-.personagens-info {
-    padding: 4rem 140px;
-    display: flex;
-
-    justify-content: center;
-    gap: 24px;
-
-    align-content: space-around;
-
-}
-
-
-.personagens-info h1 {
-    /* Conheça os personagens do jogo! */
-    min-height: 103px;
-
-    font-family: 'Playfair Display';
-    font-style: 3rem;
-    font-weight: 700;
-    font-size: 48px;
-    line-height: 100%;
-    /* or 48px */
-    letter-spacing: 0.02em;
-
-    color: #000000;
-}
-
-.personagens-info-textos {
-    /* Maria Flor é uma caminhoneira jovem e alegre, conhecida por seu caminhão “Girassol” e sua habilidade na direção. Ela ama a natureza e as viagens, levando consigo um diário de bordo cheio de histórias. */
-
-    /* min-height: 94px; */
-    min-width: 443px;
-    max-width: 50%;
-
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 160%;
-    /* or 51px */
-
-    color: #000000;
-
-    flex-grow: 0;
-    flex-shrink: 1;
-}
-
-@media (max-width: 600px) {
-    .personagens-info-textos {
-        min-width: 443px;
-    }
-}
-
-.personagens-info img {
-    /* height: 50%; */
-    /* max-height: 609px; */
-    height: min-content;
-    max-width: 50%;
-    /* flex-grow: 1;
-            flex-shrink: 1; */
-}
-
-
-
 @media (max-width: 800px) {
     .personagens-info {
         padding: 4rem 0;
@@ -676,3 +874,22 @@ body {
 #carrossel {
     position: relative;
 }
+
+@media (max-width: 600px) {
+    .personagens-info-textos {
+        min-width: 443px;
+    }
+}
+
+.personagens-info img {
+    /* height: 50%; */
+    /* max-height: 609px; */
+    height: min-content;
+    max-width: 50%;
+    /* flex-grow: 1;
+            flex-shrink: 1; */
+
+
+}
+
+
