@@ -95,43 +95,50 @@ body {
 
 /* SEÇÃO SOBRE O JOGO */
 .apresentacao__sobreojogo {
-    padding: 10rem 6rem;
+    padding: 8rem 6rem; 
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 2.5rem;
+    flex-direction: column; 
+    align-content: space-around;    
+    justify-content: center; 
+    gap: -25rem;
     background-color: #63BB80;
     margin: 0 auto;
-    height: 81.5vh;
+    min-height: 100vh; 
 }
 
 .apresentacao_sobreojogo_conteudo {
-    width: 80%;
+    width: 100%;
+    max-width: 800px; 
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 30px; 
     white-space: pre-line;
-    
+    text-align: center; 
+    padding: 0 1rem; 
 }
 
 .titulo-sobreojogo {
-    text-align: left;
-    font-size: 2.35rem;
+    font-size: 2rem; 
     font-family: var(--fonte-primaria);
-    margin: 3.5rem 0;
+    margin: 2.5rem 0; 
 }
 
 .texto__sobreojogo,
 .texto__sobreojogo2 {
-    text-align: left;
-    font-size: 1.1rem;    
+    font-size: 1rem; 
     font-family: var(--fonte-primaria);
-    margin: 1rem 0;
     text-align: justify;
+    margin: 1rem 0; 
+    max-width: 100%; 
+    overflow-wrap: break-word; 
 }
 
 .imagem__sobreojogo {
-    position: relative; 
+    width: 100%; 
+    max-width: 600px; 
+    height: auto; 
+    margin-top: 2rem; 
+    align-self: flex-end; 
 }
 
 .conteudo__titulo {
