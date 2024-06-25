@@ -93,7 +93,7 @@ body {
 
 /* .estilos duvidas, suporte{} */
 
-/* seção sobre o jogo */
+/* SEÇÃO SOBRE O JOGO */
 .apresentacao__sobreojogo {
     padding: 10rem 6rem;
     display: flex;
@@ -102,7 +102,7 @@ body {
     gap: 2.5rem;
     background-color: #63BB80;
     margin: 0 auto;
-    height: 85vh;
+    height: 81.5vh;
 }
 
 .apresentacao_sobreojogo_conteudo {
