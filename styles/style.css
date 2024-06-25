@@ -92,7 +92,7 @@ body {
 }
 
 /* .estilos duvidas, suporte{} */
-
+/*
 .apresentacao__container__2 {
     padding: 10rem 6rem;
     display: flex;
@@ -119,7 +119,30 @@ body {
     font-family: var(--fonte-secundaria);
     padding-bottom: 10px;
 }
+*/
+/* seção sobre o jogo */
+.apresentacao__sobreojogo {
+    padding: 10rem 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2.5rem;
+    background-color: #63BB80;
+}
 
+.apresentacao_sobreojogo_conteudo {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    white-space: pre-line;
+}
+
+.titulo-sobreojogo {
+    text-align: left;
+    font-size: 1.875rem;
+    font-family: var(--fonte-primaria);
+}
 
 .conteudo__titulo {
     font-size: 2.25rem;
