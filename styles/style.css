@@ -92,34 +92,7 @@ body {
 }
 
 /* .estilos duvidas, suporte{} */
-/*
-.apresentacao__container__2 {
-    padding: 10rem 6rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 2.5rem;
-}
 
-.apresentacao__container__conteudo__2 {
-    display: flex;
-    flex-direction: column;
-     gap: 2.5rem;
-}
-.titulo__principal__2 {
-    text-align: left;
-    font-size: 2.875rem;
-    font-family: var(--fonte-primaria);
-    padding-bottom: 10px;
-}
-
-.subtitulo__principal__2 {
-    text-align: left;
-    font-size: 1.875rem;
-    font-family: var(--fonte-secundaria);
-    padding-bottom: 10px;
-}
-*/
 /* seção sobre o jogo */
 .apresentacao__sobreojogo {
     padding: 10rem 6rem;
@@ -128,6 +101,8 @@ body {
     justify-content: space-between;
     gap: 2.5rem;
     background-color: #63BB80;
+    margin: 0 auto;
+    height: 85vh;
 }
 
 .apresentacao_sobreojogo_conteudo {
@@ -136,12 +111,33 @@ body {
     flex-direction: column;
     gap: 40px;
     white-space: pre-line;
+    
 }
 
 .titulo-sobreojogo {
     text-align: left;
-    font-size: 1.875rem;
+    font-size: 2.35rem;
     font-family: var(--fonte-primaria);
+    margin: 3.5rem 0;
+}
+
+.texto__sobreojogo {
+    text-align: left;
+    font-size: 1.1rem;    
+    font-family: var(--fonte-primaria);
+    margin: 1rem 0;
+    text-align: justify;
+}
+
+.texto__sobreojogo2 {
+    text-align: left;
+    font-size: 1.1rem;    
+    font-family: var(--fonte-primaria);
+    text-align: justify;
+}
+
+.imagem__sobreojogo {
+    position: relative; 
 }
 
 .conteudo__titulo {
