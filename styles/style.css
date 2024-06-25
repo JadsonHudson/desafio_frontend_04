@@ -151,8 +151,6 @@ body {
     font-family: var(--fonte-primaria);
 }
 
-
-
 #nome-autor::after {
     content: "|";
     animation: piscar 1s infinite;
