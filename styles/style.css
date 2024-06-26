@@ -110,7 +110,7 @@ body {
     flex-direction: column;
     gap: 40px;
     white-space: pre-line;
-    
+
 }
 
 .titulo-sobreojogo {
@@ -122,7 +122,7 @@ body {
 
 .texto__sobreojogo {
     text-align: left;
-    font-size: 1.1rem;    
+    font-size: 1.1rem;
     font-family: var(--fonte-primaria);
     margin: 1rem 0;
     text-align: justify;
@@ -130,13 +130,13 @@ body {
 
 .texto__sobreojogo2 {
     text-align: left;
-    font-size: 1.1rem;    
+    font-size: 1.1rem;
     font-family: var(--fonte-primaria);
     text-align: justify;
 }
 
 .imagem__sobreojogo {
-    position: relative; 
+    position: relative;
 }
 
 .conteudo__titulo {
@@ -287,8 +287,9 @@ body {
     justify-content: center;
     padding: 4rem 6rem 2rem;
     gap: 2rem;
-    background-color: var( --cor-footer);
+    background-color: var(--cor-footer);
 }
+
 /* .texto__rodape {} */
 .rodape p {
     text-align: center;
@@ -305,7 +306,7 @@ body {
 
 .faq__right {
     width: 55%;
-  }
+}
 
 .faq__left .faq__titulo {
     font-size: 1.5rem;
@@ -337,7 +338,7 @@ body {
     justify-content: space-between;
     align-items: end;
     padding: 13rem 15rem;
-    
+
 }
 
 .faq__left a, .faq__right a {
@@ -372,9 +373,9 @@ body {
 
 
 
- /*Pagina de Rotas */
+/*Pagina de Rotas */
 
- .rotas__section {
+.rotas__section {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -396,7 +397,7 @@ body {
     margin-bottom: 80px;
     text-align: center;
     font-family: var(--fonte-primaria);
-  
+
 }
 
 .rotas__imagens {
@@ -412,26 +413,27 @@ body {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
 /*sessão ESTRADAS */
 
 .titulo__principal__estradas {
     text-align: center;
     font-size: 30px;
     font-family: var(--fonte-primaria);
-          
+
 }
 
 .apresentacao__container__estradas {
     display: flex;
     flex-direction: column;
-     gap: 2.5rem;
+    gap: 2.5rem;
     align-items: center;
     padding: 5rem 15rem;
 
-    
-    }
 
-      
+}
+
+
 
 /*Pagina de Cadastro */
 .cadastro-page {
@@ -439,7 +441,8 @@ body {
     justify-content: center;
     align-items: center;
     height: 140vh;
-    position: relative; /* Para garantir que .cadastro__fundo ocupe o espaço completo */
+    position: relative;
+    /* Para garantir que .cadastro__fundo ocupe o espaço completo */
 }
 
 .cadastro-page .cadastro__fundo {
@@ -451,7 +454,8 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: -1; /* Para garantir que fique atrás dos outros elementos */
+    z-index: -1;
+    /* Para garantir que fique atrás dos outros elementos */
 }
 
 .cadastro-page .cadastro__container {
@@ -462,7 +466,8 @@ body {
     width: 80%;
     max-width: 1200px;
     position: relative;
-    z-index: 1; /* Para que fique acima do .cadastro__fundo */
+    z-index: 1;
+    /* Para que fique acima do .cadastro__fundo */
 }
 
 .cadastro-page .cadastro__apresentacao {
@@ -517,7 +522,7 @@ body {
     margin-bottom: 20px;
     font-family: var(--fonte-secundaria);
     text-align: center;
-    
+
 
 }
 
@@ -533,7 +538,7 @@ body {
 
 }
 
-.cadastro-page form input {
+.cadastro-page form input, .cadastro-page form select {
     margin-bottom: 15px;
     padding: 10px;
     border: 1px solid #ccc;
@@ -579,10 +584,10 @@ body {
 
 .titulo__principal__personagens {
     font-size: 38px;
- padding-bottom:80px ;
+    padding-bottom: 80px;
     text-align: left;
     font-family: var(--fonte-primaria);
-   }
+}
 
 #personagens {
     padding: 5rem 6rem;
@@ -631,7 +636,7 @@ body {
     overflow-y: hidden;
     min-width: 400px;
     margin-left: -3rem;
- 
+
 
 }
 
@@ -856,6 +861,7 @@ body {
     }
 
 }
+
 @media (max-width: 800px) {
     .personagens-info {
         padding: 4rem 0;
@@ -891,5 +897,3 @@ body {
 
 
 }
-
-
