@@ -49,7 +49,7 @@ document.getElementById('cadastroForm').addEventListener('submit', function (eve
         cidade_id: Number.parseInt(cidade),
         senha: senha
     };
-    console.log(dadosCadastro);
+
     fetch('https://trilhas-desafio-iv-api.vercel.app/usuarios', {
         method: 'POST',
         headers: {
