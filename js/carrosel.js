@@ -5,7 +5,6 @@ document.addEventListener('DOMContentLoaded', function () {
     // Função para mostrar o slide correspondente
     function showSlide(event) {
         const targetId = event.target.getAttribute('data-slide');
-        console.log(targetId)
         buttons.forEach(button => {
             button.setAttribute("modo", button.getAttribute('data-slide') === targetId ? 'ativado' : 'desativado');
         });
