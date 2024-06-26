@@ -23,7 +23,6 @@
 body {
     background-color: var(--cor-primaria);
     color: var(--cor-secundaria);
-    background-image: url('/assets/Background\ Códigos.png');
     background-size: cover;
     background-position: center;
 }
@@ -439,7 +438,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 110vh;
+    height: 140vh;
     position: relative; /* Para garantir que .cadastro__fundo ocupe o espaço completo */
 }
 
@@ -459,6 +458,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    /* height: 180vh; */
     width: 80%;
     max-width: 1200px;
     position: relative;
